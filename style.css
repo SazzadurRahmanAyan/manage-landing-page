@@ -255,6 +255,21 @@ p[data-width="wide"] {
     .mobile-nav-toggle .icon-close {
         display: none;
     }
+} 
+
+/* footer navigation */
+
+.footer-nav {
+    columns: 2;
+}
+
+.footer-nav a {
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+}
+
+.footer-nav a:is(:hover, :focus) {
+    color: var(--clr-accent-400);
 }
 
 /* cta */
