@@ -508,6 +508,24 @@ input:where([type="text"], [type="email"]) {
     margin-top: var(--flow-spacer, 3em);
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-center p {
+    margin-inline: auto;
+}
+
+@media (max-width: 50em) {
+    .text-center-sm-only {
+        text-align: center;
+    }
+
+    .text-center-sm-only p {
+        margin-inline: auto;
+    }
+}
+
 
 .text-primary-400 {
     color: var(--clr-primary-400);
@@ -596,6 +614,10 @@ input:where([type="text"], [type="email"]) {
 
 .padding-block-700 {
     padding-block: var(--size-700);
+}
+
+.margin-bottom-700 {
+    margin-block-end: var(--size-700);
 }
 
 .display-sm-none {
