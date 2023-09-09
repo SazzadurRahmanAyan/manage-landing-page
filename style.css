@@ -535,6 +535,27 @@ input:where([type="text"], [type="email"]) {
     background: var(--clr-accent-400);
 }
 
+/* image with blob bg */
+
+@media (max-width: 50em) {
+    .hero__image {
+        order: -1;
+    }
+}
+
+.hero__image::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    width: 50%;
+    aspect-ratio: 1 / 1.3;
+    background-image: url("images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
 
 /* Utility classes */
 
